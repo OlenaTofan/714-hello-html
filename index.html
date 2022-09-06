@@ -4,10 +4,112 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&display=swap" rel="stylesheet">
+    
     <title>HTML Sample</title>
   </head>
   <body>
-    <h1>Hi there!!!</h1> <img src="img/darth-vader-starwars-rise-74.jpg" alt="Darth Vader">
-
+    <style>
+      body {
+        background: linear-gradient(100deg, rgb(184, 3, 12), rgb(50, 187, 211)) ;
+        color: honeydew;
+        font-family: 'Antonio', sans-serif;
+        text-align: center;
+        margin: 100px 300px;
+      }
+      img {
+        width: 400px;
+        border-radius: 30%;
+      }
+      ul {
+        list-style: none;
+      }
+      
+      footer ul {
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+      }
+      footer li{
+        width: 50px;
+        height: 50px;
+        margin: 0 50px;
+      }
+      footer img {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    <h1>Hi there!!!</h1>
+    <a href="https://en.wikipedia.org/wiki/Darth_Vader"
+      ><img src="img/luke-i-am-your-father.jpg" alt="Darth Vader"
+    /></a>
+    <p>
+      Darth Vader is a fictional character in the Star Wars franchise. The
+      character is the central antagonist of the original trilogy and, as Anakin
+      Skywalker, is one of the main protagonists throughout the prequel trilogy.
+      Star Wars creator George Lucas has collectively referred to the first six
+      episodic films of the franchise as "the tragedy of Darth Vader".
+    </p>
+    <div>
+      <p>First appearance:
+        <ul>
+          <li>&#x21AC Star Wars (1977)</li>
+        </ul>
+      </p>
+      <p>Created by:
+        <ul> 
+          <li>&#x21AC George Lucas</li>
+        </ul>
+      </p>
+      <p>Portrayed by Darth Vader:
+        <ol>
+          <li>David Prowse</li>
+          <li>Bob Anderson</li>
+          <li>Spencer Wilding/Daniel Naprous</li>
+          <li>Dimitrious Bistrevsky</li>
+        </ol>
+      </p>
+      <p>Voiced by Darth Vader:
+        <ol>
+          <li>James Earl Jones</li>
+          <li>Ben Burtt (vocal effects)</li>
+          <li>Brock Peters (radio drama)</li>
+          <li>Matt Sloan</li>
+          <li>Scott Lawrence (various video games)</li>
+        </ol>
+      </p>
+    </div>
+    <div>
+      <p>Favorite character in Star Wars:</p>
+      <label for="Darth Vader"
+        ><input type="checkbox" name="personality" value="Darth Vader" /> Darth Vader</label
+      >
+      <label for="Yoda"
+        ><input type="checkbox" name="personality" value="Yoda" /> Yoda</label
+      >
+      <label for="Luke"
+        ><input type="checkbox" name="personality" value="Luke" /> Luke
+        Skywalker</label
+      >
+      <label for="Ewok"
+        ><input type="checkbox" name="personality" value="Ewok" /> Ewok</label
+      >
+      
+      <input type="text" placeholder="Your option" required />
+      <button type="submit">Submit</button>
+    </div>
+    <footer>
+      <ul>
+        <li>
+          <a href="https://www.instagram.com/"><img src="img/insta.png" alt="Instagram logo"></a>
+        </li>
+        <li>
+          <a href="https://uk-ua.facebook.com/"><img src="img/facebook.png" alt="Facebook logo"></a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
